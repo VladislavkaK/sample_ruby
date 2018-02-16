@@ -15,6 +15,10 @@
               <ul class="dropdown-menu">
                 <li><%= link_to "Profile", current_user %></li>
                 <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+                <li>
+                  <!--<a href="http://gravatar.com/emails">Change</a>-->
+                  <%= link_to "Change", "http://gravatar.com/emails", target: "_blank"%>
+                </li>
                 <li class="divider"></li>
                 <li>
                   <%= link_to "Sign out", signout_path, method: "delete" %>
